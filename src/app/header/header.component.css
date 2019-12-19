@@ -1,0 +1,47 @@
+
+.headers {
+    background-color: rgba(255,255,255,0.5);
+    padding-bottom: 10px;
+    margin-top: -10px;
+    display: flex;
+    /* background-image: url(http://ilyakhasanov.ru/images/background/12.png); */
+
+    margin-left: -7px;
+    margin-right: -19px;
+    font-weight: 900;
+    /*hkj*/
+}
+
+p { 
+    font-size: 35px;
+    position: relative;
+    left: 45%;
+    font-style:impact;
+    margin-left: -40%;
+}
+
+.ss {
+    font-size: -20px;
+}
+
+.navig {
+    display: flex;
+    float: right;
+    padding: 1% 2% 1% 2%;
+    font-size: 20px;
+    position: relative;
+    right: -1500px;
+    width: 300px;
+    color: black;
+    font-style: Arial;
+    
+    
+}
+
+
+a {
+    text-decoration: none;
+    bottom: -30px;
+    position: relative;
+    color:rgb(0,255,156);
+}
