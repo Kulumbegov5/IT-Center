@@ -1,6 +1,6 @@
 
 .headers {
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color:rgba(255, 255, 255, 0.959);
     padding-bottom: 10px;
     margin-top: -10px;
     display: flex;
@@ -33,9 +33,9 @@ p {
     padding: 1% 2% 1% 2%;
     font-size: 20px;
     position: relative;
-    right: -1500px;
+    right: -600px;
     width: 300px;
-    color: black;
+    color:#00BEED;
     font-style: Arial;
     
     
@@ -46,5 +46,5 @@ a {
     text-decoration: none;
     bottom: -30px;
     position: relative;
-    color:rgba(255, 255, 255, 0.781);
+    color:#00BEED;
 }
