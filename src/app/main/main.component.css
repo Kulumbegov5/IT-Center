@@ -1,0 +1,23 @@
+.button {
+    background-color: #61CE70;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    border-color: transparent;
+    padding: 1%;
+    position: relative;
+    right: -50px;
+    top: -400px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgba(97, 206, 112, 0.603);
+}
+.map {
+    position: relative;
+    margin-left: 900px;
+    top: 50px;
+    border-color: transparent;
+    border-radius: 20px;
+}
