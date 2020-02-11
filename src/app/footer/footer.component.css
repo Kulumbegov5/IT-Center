@@ -1,0 +1,94 @@
+#footer {
+    margin-left: -8px;
+    margin-right: -8px;
+    
+    background-image: url(http://i.ibb.co/dggPLGN/study-footer.jpg);
+    color: #fff;
+    font-size: 70%;
+    padding: 5px; 
+    clear : both;
+    }
+    #footer a {
+        color: #ff0;
+        }
+        
+        #footer a:hover {
+        color: #f00;
+        }
+        #footer p {
+            padding: 2px;
+            text-align: center;
+            }
+            
+            .clearfloat {
+            
+            clear: both;
+            }
+            h1, h3 {
+                text-align: center;
+            }
+            h1 {
+                font-family: "Playfair Display", serif;
+                font-weight: 500;
+                font-size: 50px;
+            }
+
+            h3 {
+                font-family: "Poppins", Sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 40px;
+            }
+            h2 {
+                font-family: "Playfair Display", serif;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-left:100px;
+            line-height: 0px;
+            
+            }
+
+            h4 {
+                font-family: "Poppins", serif;
+                font-size: 25px;
+                font-weight: 100;
+                text-align: center;
+                line-height: 0px;
+            }
+
+            h5 {
+                font-family: "Poppins", serif;
+                font-size: 25px;
+                font-weight: 100;
+                text-align: center;
+                line-height: 30px;
+            }
+
+            .box-1 {
+                margin-right: 300px;
+               flex-grow: 0;
+                padding: 30px 60px 30px 30px;
+                background-color: rgba(255,255,255,0.25);
+                width: 400px;
+                
+            }
+
+            .icon {
+                height: 100px;
+                width: 100px;
+                margin-left: 180px;
+                
+            }
+            .box-2 {
+               flex-grow: 0;
+                padding: 30px 30px 30px 30px;
+                background-color: rgba(255,255,255,0.25);
+                width: 400px;
+            }
+
+            .boxes {
+                margin-top: 100px;
+                margin-left: 150px;
+                margin-right: 0px;
+                display: flex;
+            }

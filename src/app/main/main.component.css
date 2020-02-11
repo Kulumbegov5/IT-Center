@@ -15,9 +15,44 @@
     background-color: rgba(97, 206, 112, 0.603);
 }
 .map {
-    position: relative;
+    /* position: relative; 
+    
     margin-left: 900px;
-    top: 50px;
+    top: 150px; */
     border-color: transparent;
     border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.text-flex {
+    margin-left: 30px;
+    margin-right: 170px;
+}
+
+.map-flex {
+    margin-top: 50px;
+}
+
+.box-1 {
+    background-color: azure;
+    display: flex;
+    
+    padding: 150px;
+}
+.image {
+    width:421px; height: 210px;
+}
+.image-box-1 {
+   padding-left: 150px;
+}
+.flex-grow-1 {
+    color: #474545;
+    font-size: 41px;
+    line-height: 0.5em;
+    letter-spacing: -0.8p
+    margin
 }
