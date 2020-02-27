@@ -38,21 +38,95 @@
 }
 
 .box-1 {
-    background-color: azure;
+    background-color:white;
     display: flex;
-    
+    margin-top: 100px;
     padding: 150px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -16px;
+    
 }
 .image {
-    width:421px; height: 210px;
+    
+width: 700px; height: 400px; border-radius: 15px;
 }
 .image-box-1 {
    padding-left: 150px;
+   
 }
-.flex-grow-1 {
-    color: #474545;
-    font-size: 41px;
-    line-height: 0.5em;
-    letter-spacing: -0.8p
-    margin
+.box-2 {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 57px;
+    line-height: 1.2em;
+    margin-bottom: 14px;
 }
+.government {
+    background-color:#E3E4E8;
+    margin-top: -70px;
+    padding: 90px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -16px;
+   
+} 
+
+.boss {
+    text-align: center;
+    margin-top:-30px;
+    font-size:45px;
+   
+    flex-grow: 1;
+}
+.boss1{
+    font-size: 40px;
+    color: #602e0c;
+    /* font-family:'Courier New', Courier, monospace; */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    /* margin-left: 700px; */
+    margin-top: 50px;
+    margin-left: 150px;
+    text-decoration: underline;
+   
+}
+.photo {
+    vertical-align: middle;
+    display: inline-block;
+    width: 550px; height: 450px; border-radius: 15px;
+    border: none;
+    
+}
+h5 {
+    
+    font-size: 32px;
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 65px;
+    width: 500px;
+}
+
+.logo-vk {
+ width: 55px; height: 55px;
+margin-left: 300px;
+border-radius: 30px;
+}
+.logo-fb {
+ width: 53.5px; height: 53.5px;
+ border-radius: 30px;
+
+
+   }
+
+   .flex {
+       display: flex;
+   }
+
+   .logo-vk:hover {
+        background-color: rgba(33, 20, 209, 0.24);
+       
+   }
+   .logo-fb:hover {
+        background-color: rgba(33, 20, 209, 0.24);
+   }
+
