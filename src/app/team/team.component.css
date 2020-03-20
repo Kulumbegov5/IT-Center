@@ -10,11 +10,12 @@ h5 {
     font-size: 19px;
 }
 .photo {
-    width: 280px; 
-    height: 300px; 
+    width: 330px; 
+    height: 350px; 
     margin-top: 50px;
-   
-  margin-left: 90px;
+   float: left;
+  margin-left: 70px;
+  margin-right: 20px;
     border-radius: 15px;
 }
 
@@ -28,3 +29,36 @@ h3 {
     text-decoration:underline;
     
 }
+
+.block {
+   width: 1800px;
+}
+
+.flex {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.logo-vk {
+    width: 57px; height: 57px;
+   margin-left: 90px;
+   margin-top: 30px;
+   border-radius: 30px;
+}
+
+.logo-inst {
+    width: 53.5px; height: 53.5px;
+    border-radius: 30px;
+    margin-left: 15px;
+   
+      }
+
+      .logo-vk:hover {
+        background-color: rgba(255, 255, 255, 0.699);
+       
+   }
+   .logo-inst:hover {
+        
+        background-color: rgba(255, 255, 255, 0.699);
+   }
