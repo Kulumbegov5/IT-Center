@@ -62,3 +62,10 @@ h3 {
         
         background-color: rgba(255, 255, 255, 0.699);
    }
+
+hr {
+       background-image: url(http://ilyakhasanov.ru/images/background/71.jpg);
+       color: cyan;
+       border: none;
+       height: 20px;
+   }

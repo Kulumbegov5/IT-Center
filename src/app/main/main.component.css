@@ -111,12 +111,17 @@ h5 {
 margin-left: 300px;
 border-radius: 30px;
 }
+
+.logo-fb {
+    width: 55px; height: 55px;
+   margin-left: 300px;
+   border-radius: 30px;
+}
 .logo-inst {
     width: 53.5px; height: 53.5px;
     border-radius: 30px;
     margin-left: 15px;
-   
-      }
+    }
 
    .flex {
        display: flex;
@@ -126,6 +131,11 @@ border-radius: 30px;
         background-color: rgba(33, 20, 209, 0.24);
        
    }
+
+   .logo-fb:hover {
+    background-color: rgba(255, 255, 255, 0.664);
+   }
+
    .logo-inst:hover {
         
         background-color: rgba(33, 20, 209, 0.24);

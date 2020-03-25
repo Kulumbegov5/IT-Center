@@ -1,12 +1,14 @@
 #footer {
     margin-left: -8px;
     margin-right: -8px;
+    margin-top: -50px;
     
     background-image: url(http://i.ibb.co/dggPLGN/study-footer.jpg);
     color: #fff;
     font-size: 70%;
     padding: 5px; 
     clear : both;
+
     }
     #footer a {
         color: #ff0;
