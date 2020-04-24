@@ -1,0 +1,33 @@
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+h3 {
+font-size: 25px;
+font-weight: 1200;
+font-family: monospace;
+margin-left: 70px;
+margin-right: 20px;
+text-decoration: underline;
+}
+
+h4 {
+    font-size: 25px;
+    text-align: right;
+    margin-top: -380px;
+    margin-right: 100px;
+    font-family: monospace;
+    color: brown;
+}
+.photo {
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    margin-left: 70px;
+    margin-right: 20px;
+}

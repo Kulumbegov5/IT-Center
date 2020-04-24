@@ -8,6 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
+import { NewsComponent } from './news/news.component';
+import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule, AngularFireStorage } from '@angular/fire/storage';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +24,18 @@ import { TeamComponent } from './team/team.component';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    TeamComponent
+    TeamComponent,
+    NewsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

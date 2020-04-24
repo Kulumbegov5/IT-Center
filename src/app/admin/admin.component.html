@@ -1,0 +1,34 @@
+<div *ngIf="!loginservice.logged">
+
+   <h2>Введите логин и пароль</h2>
+
+    <form (ngSubmit)="login()">
+        <input type="text" [(ngModel)]="username" name="username" required> 
+        <input type="password"  [(ngModel)]="password" name="password" required>
+        <input type="submit">
+    </form>
+
+</div>
+
+    <div  *ngIf="loginservice.logged">
+ 
+<nav>
+     <h2>Новости</h2>
+     <button (click)="logout()"  *ngIf="loginservice.logged">
+        <h3>Выйти</h3> 
+     </button>
+</nav>
+<form [formGroup]="formTemplate" (submit)="OnSubmit(formTemplate.value)">
+    <div>
+        <label>Выберите файл для загрузки:</label>
+        <input type="file" accept="image/*" class="" #fileUploader formControlName="imageUrl" (change)="showPreview($event)"/>
+    <div *ngIf="isSubmitted && formControls.imageUrl.errors?.required">Это поле обязательно</div>
+        <input type="text" formControlName="title" placeholder="Заголовок статьи"/>
+    <div *ngIf="isSubmitted && formControls.title.errors?.required">Это поле обязательно</div>
+        <textarea type="text" formControlName="text" placeholder="Текст статьи"></textarea>
+    <div *ngIf="isSubmitted && formControls.text.errors?.required">Это поле обязательно</div>
+        <button type="submit" >Подтвердить</button>
+    </div>
+</form>
+
+    </div>
