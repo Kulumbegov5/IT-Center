@@ -1,11 +1,12 @@
 <div class="news"   
-    style="background-color:rgba(252, 252, 252, 0.884);
+    style="
     margin-left: 50px;  
     margin-right: 50px; 
     margin-top: 0px;
     padding-top: 50px;
-    padding-bottom: 400px;">
-<div class="flex">
+    padding-bottom: 100px;
+    ">
+<!--<div class="flex">
  <h2>Новости</h2>
    
  <h3>Во избежание заболевания вирусом "Covid-19" <br>
@@ -51,6 +52,25 @@
         </h4>
     
     
-         </div>
+         </div>-->
          
+
+    <div *ngFor="let item of news">
+      <div class="card" >
+        <h3 class="card-header bg-dark text-white">{{item.payload.doc.data().title}}</h3>
+        <div class="card-body">
+            <img src="{{item.payload.doc.data().imageUrl}}" class="photo" >
+            
+            <h4 class="text" style="color: rgb(0, 0, 0); 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                {{item.payload.doc.data().text}}
+            </h4>
+        </div>
+        
+        </div>
+        <br>
+    </div>
+
+
+
 </div>

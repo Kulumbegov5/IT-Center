@@ -28,7 +28,7 @@ export class AdminComponent implements OnInit {
 
   // directafterlogout:string="/admin";
   password:string;
-  constructor(private afstorage: AngularFireStorage , private otherservice:OtherService, private loginservice:LoginService,
+  constructor(private afstorage: AngularFireStorage , private otherservice:OtherService, public loginservice:LoginService,
     private firebaseservice: FirebaseService ) { }
  
   login () {

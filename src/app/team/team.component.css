@@ -1,4 +1,9 @@
-h2 {
+ .flex {
+     display: flex;
+
+ }
+ 
+ h2 { 
     text-align: center;
     color: white;
     font-size: 47px;
@@ -9,7 +14,143 @@ h5 {
     text-align: center;
     font-size: 19px;
 }
-.photo {
+
+body {
+    margin-top: 50px;
+    background: url("http://www.promosila.ru/upload/medialibrary/9fb/9fb7a6c0b83fbb6db6aae3ab6f2632a3.jpg") no-repeat center center;
+    background-size: 1400px 900px;
+    background-position: left top;
+
+}
+
+.box {
+    width: 300px; height: 700px; margin: auto;
+    background-color: transparent; border: solid 3px #eee;
+    margin-bottom: 90px;
+    background: url("https://i.ibb.co/KwKLRXJ/image.jpg") no-repeat center center;
+    background-size: 300px 210px;
+    background-position: left top; background-color: #fff;
+
+}
+
+.text {
+font-family: raleway;
+font-size: 49px; position: absolute center;
+display: inline-block; text-align: center; padding-left: 4%;
+} 
+
+.text1 {
+    font-family: raleway;
+    font-size: 29px; text-align: center; margin-top: -40px;
+}
+
+.text2 {
+    font-family: lato; font-size: 15px; text-align:left;
+    margin-top: 20px; margin-left: 20px; margin-right: 20px;
+    padding-top: 20px; padding-bottom: 20px;
+    padding-right: 15px; padding-left: 15px;
+    border: solid 3px #eee;
+
+}
+
+.image {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 0 2px #eee;
+    background: url("http://www.promosila.ru/upload/medialibrary/9fb/9fb7a6c0b83fbb6db6aae3ab6f2632a3.jpg")  center center no-repeat;
+    background-size: cover;
+    background-size: cover; margin: 8%;
+    margin-top: 50px; margin-bottom: -30px; align-content: center;
+}
+
+
+
+.first {
+    background: url("https://i.ibb.co/ThPkNhG/gassiev-stasik-1.jpg")  center center no-repeat;
+    background-size: cover;
+}
+
+.second {
+    background: url("https://i.ibb.co/WFV26yR/kulu.jpg")  center center no-repeat;
+    background-size: cover;
+}
+
+.third {
+    background: url("https://i.ibb.co/bFSLZ3b/IMG-3590-1.jpg")  center center no-repeat;
+    background-size: cover;
+}
+
+.fourth {
+    background: url("https://i.ibb.co/pK8S1xg/rusikk.jpg")  center center no-repeat;
+    background-size: cover;
+}
+
+.fifth {
+    background: url("https://i.ibb.co/djCr0nP/kulu-2.jpg")  center center no-repeat;
+    background-size: cover;
+}
+
+.sixth {
+    background: url("https://i.ibb.co/pzzmWQZ/sanya.jpg")  center center no-repeat;
+    background-size: cover;
+}
+
+
+
+.logo-vk {
+    width: 57px; height: 57px;
+   margin-left: 90px;
+   
+   border-radius: 30px;
+}
+
+.logo-inst {
+    width: 53.5px; height: 53.5px;
+    border-radius: 30px;
+   
+   
+      }
+
+      .logo-vk:hover {
+        background-color: rgba(36, 35, 102, 0.404);
+       
+   }
+   .logo-inst:hover {
+        
+        background-color: rgba(36, 35, 102, 0.404);
+   }
+
+
+.trick {
+    display: inline-block; vertical-align: middle;
+    height: 150px;
+}
+
+.image:hover {
+    box-shadow: 5px 5px 19px #ddd;
+}
+
+.image:hover{
+    transform: scale(0.75);
+    transition: 1.3s ease-in-out;
+}
+
+.trick:hover img {
+    transform: scale(1);
+}
+
+#overlay {
+    padding:0; opacity: 1;
+}
+
+#box:hover #overlay {
+    opacity: 1;
+}
+
+
+
+/* .photo { 
     width: 330px; 
     height: 350px; 
     margin-top: 50px;
@@ -62,7 +203,7 @@ h3 {
         
         background-color: rgba(255, 255, 255, 0.699);
    }
-
+*/
 /* hr {  */
        /* background-image: url(http://ilyakhasanov.ru/images/background/71.jpg); */
        /* color: cyan; */

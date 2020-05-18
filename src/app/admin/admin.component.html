@@ -1,34 +1,61 @@
-<div *ngIf="!loginservice.logged">
 
-   <h2>Введите логин и пароль</h2>
 
-    <form (ngSubmit)="login()">
-        <input type="text" [(ngModel)]="username" name="username" required> 
-        <input type="password"  [(ngModel)]="password" name="password" required>
-        <input type="submit">
+<div class="admin-component">
+
+<div *ngIf="!loginservice.logged" class="login">
+
+   <h2 class="login-header">Введите логин и пароль</h2>
+
+    <form (ngSubmit)="login()" class="login-container">
+        <p><input type="text" [(ngModel)]="username" name="username" required placeholder="Логин"></p> 
+        <p><input type="password"  [(ngModel)]="password" name="password" required placeholder="Пароль"></p>
+        <p><input type="submit"></p>
     </form>
 
 </div>
 
-    <div  *ngIf="loginservice.logged">
+    <div class="card text-white bg-dark" style="width: 80%; margin: 0 auto 0 auto;"  *ngIf="loginservice.logged">
  
-<nav>
-     <h2>Новости</h2>
-     <button (click)="logout()"  *ngIf="loginservice.logged">
-        <h3>Выйти</h3> 
-     </button>
+<nav class="card-header"> 
+     <h2 style="text-align: center;" >Новости</h2>
+     
 </nav>
 <form [formGroup]="formTemplate" (submit)="OnSubmit(formTemplate.value)">
-    <div>
-        <label>Выберите файл для загрузки:</label>
-        <input type="file" accept="image/*" class="" #fileUploader formControlName="imageUrl" (change)="showPreview($event)"/>
-    <div *ngIf="isSubmitted && formControls.imageUrl.errors?.required">Это поле обязательно</div>
-        <input type="text" formControlName="title" placeholder="Заголовок статьи"/>
-    <div *ngIf="isSubmitted && formControls.title.errors?.required">Это поле обязательно</div>
-        <textarea type="text" formControlName="text" placeholder="Текст статьи"></textarea>
-    <div *ngIf="isSubmitted && formControls.text.errors?.required">Это поле обязательно</div>
-        <button type="submit" >Подтвердить</button>
+    <div class="card-body">
+
+        <div class="text-center">
+            <img [src]="imgSrc" width="350px" height="250px" (click)="fileUploader.click()">
+        </div>
+
+        <div class="form-group">
+            <label>Выберите файл для загрузки:</label>
+            <input type="file" accept="image/*" class="form-control" #fileUploader formControlName="imageUrl" (change)="showPreview($event)"/>
+            <div class="text-danger"   *ngIf="isSubmitted && formControls.imageUrl.errors?.required">Это поле обязательно</div>
+        </div>
+
+        <div class="form-group">
+        <input type="text" class="form-control" formControlName="title" placeholder="Заголовок статьи"/>
+    <div class="text-danger" *ngIf="isSubmitted && formControls.title.errors?.required">Это поле обязательно</div>
+</div>
+
+<div class="form-group">
+        <textarea type="text" class="form-control" formControlName="text" placeholder="Текст статьи"></textarea>
+    <div class="text-danger" *ngIf="isSubmitted && formControls.text.errors?.required">Это поле обязательно</div>
+</div>
+
+<div class="form-group">
+        <button type="submit" class="btn btn-success float-right" >Подтвердить</button>
+    </div>
+
     </div>
 </form>
 
+<div  style="margin: 0 auto 0 auto; padding: 10px;" >
+<button class=" btn btn-secondary " (click)="logout()"  *ngIf="loginservice.logged">
+    Выйти 
+ </button>
+</div>
+
     </div>
+
+</div>
